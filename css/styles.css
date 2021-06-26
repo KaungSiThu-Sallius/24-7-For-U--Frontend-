@@ -1,0 +1,229 @@
+:root {
+    /* colors */
+    --blue01: #0F516A;
+
+    --pink03: #FEE2F7;
+
+    --greentea04: #F9FFF0;
+
+    --white: #FAF5F5;
+
+    --black01: #0F0A0A;
+    --black02: #4A4A4A;
+
+    /* animation */
+    --duration: 300ms;
+    --ease: ease-in-out;
+}
+
+/* ----------------------------- navbar ----------------------------- */
+
+.navbar {
+    background-color: var(--pink03);
+}
+
+.nav {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: var(--duration);
+    transform: translate(100%, -100%) scale(0.5);
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.nav--active .nav {
+    opacity: 1;
+    background-color: var(--greentea04);
+    transform: translateY(0) scale(1);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav .container-fluid {
+    background-color: var(--white);
+}
+
+.nav_bg {
+    background-image: url(../images/nav_link_bg.svg);
+    border-bottom-left-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* nav_icon */
+.nav__trigger {
+    position: absolute;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 6px;
+    padding-bottom: 14px;
+    background-color: var(--blue01);
+    right: 11.5%;
+    top: 22px;
+    z-index: 200;
+    border-radius: 12px;
+}
+
+.nav__icon {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: var(--pink03);
+    transition-property: background-color, transform;
+    transition-duration: 300ms;
+}
+
+.nav__icon:before,
+.nav__icon:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background: var(--pink03);
+    transition-property: margin, transform;
+    transition-duration: 300ms;
+}
+
+.nav__icon:before {
+    margin-top: -10px;
+}
+
+.nav__icon:after {
+    margin-top: 10px;
+}
+
+.nav--active .nav__icon {
+    background: rgba(0, 0, 0, 0);
+
+}
+
+.nav--active .nav__icon:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+    background: var(--greentea04);
+}
+
+.nav--active .nav__icon:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    background-color: var(--greentea04);
+}
+
+/* nav_list(ul) */
+.nav__list .active {
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+}
+
+.nav__list {
+    list-style-type: none;
+    margin-top: 100px;
+}
+
+.nav__list li {
+    margin-bottom: 40px;
+}
+
+/* nav_link */
+.nav--active .nav__link {
+    opacity: 1;
+}
+
+.nav__link {
+    font-size: 3.125rem;
+    font-weight: 600;
+
+    color: var(--blue01);
+    opacity: 1;
+    transition: opacity 300ms var(--ease);
+    opacity: 0;
+    transition-delay: 500ms;
+}
+
+.nav__link:hover {
+    text-decoration: none;
+    color: var(--black02);
+}
+
+/* nav_item(li) */
+.nav__item .btn {
+    background-color: var(--blue01);
+    color: var(--greentea04);
+    font-size: 2rem;
+    width: 180px;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.nav__item .btn:hover {
+    background-color: var(--pink03);
+    color: var(--blue01);
+    border-color: var(--blue01);
+}
+
+.butterfly {
+    position: absolute;
+    top: 280px;
+    right: 100px;
+}
+
+/* ----------------------------- media query ----------------------------- */
+
+/* 1200px */
+@media (max-width: 1200px) {
+
+    .nav__list {
+        margin-top: 19%;
+    }
+
+    .nav__list li {
+        margin-bottom: 30px;
+    }
+
+    .nav__link {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* 991px */
+@media (max-width: 991px) {
+
+    .nav__list {
+        margin-top: 10%;
+        margin-bottom: 75px;
+    }
+
+    .nav_bg {
+        border-bottom-right-radius: 50px;
+        background-color: var(--greentea04);
+        background-image: url(../images/nav_link_bg_opacity.svg);
+        background-repeat: no-repeat;
+        background-size: 750px 550px;
+        background-position: center;
+    }
+
+    .businessman_photo {
+        position: absolute;
+        display: none;
+    }
+
+    .butterfly {
+        display: none;
+    }
+
+}
+
+/* 766px */
+@media (max-width: 766px) {
+    .nav_bg {
+        background-size: 650px 500px;
+    }
+}
