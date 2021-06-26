@@ -1,6 +1,7 @@
 :root {
     /* colors */
     --blue01: #0F516A;
+    --blue01_opacity: rgba(14, 81, 106, 0.7);
 
     --pink03: #FEE2F7;
 
@@ -120,6 +121,7 @@
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
     width: fit-content;
+    color: var(--blue01);
 }
 
 .nav__list {
@@ -140,7 +142,7 @@
     font-size: 3.125rem;
     font-weight: 600;
 
-    color: var(--blue01);
+    color: var(--blue01_opacity);
     opacity: 1;
     transition: opacity 300ms var(--ease);
     opacity: 0;
@@ -149,7 +151,7 @@
 
 .nav__link:hover {
     text-decoration: none;
-    color: var(--black02);
+    color: var(--blue01);
 }
 
 /* nav_item(li) */
@@ -227,3 +229,54 @@
         background-size: 650px 500px;
     }
 }
+
+/* 600px */
+@media (max-width: 600px) {
+
+    .nav__trigger {
+        right: 5%;
+    }
+}
+
+/* 575px */
+@media (max-width: 575px) {
+    .nav__trigger {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 1px;
+        padding-bottom: 11px;
+        top: 27px;
+        border-radius: 10px;
+    }
+
+    .nav__icon {
+        width: 25px;
+        height: 2.5px;
+    }
+
+    .nav__icon:before,
+    .nav__icon:after {
+        width: 25px;
+        height: 2.5px;
+    }
+
+    .nav__icon:before {
+        margin-top: -7px;
+    }
+
+    .nav__icon:after {
+        margin-top: 7px;
+    }
+
+    .nav__link {
+        font-size: 2rem;
+    }
+
+    .nav_bg {
+        background-size: 500px 400px;
+    }
+
+    .nav__item .btn {
+        font-size: 1.5rem;
+        width: 140px;
+    }
