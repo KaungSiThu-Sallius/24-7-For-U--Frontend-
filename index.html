@@ -14,62 +14,98 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="images/titlebar_icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <title>24/7 For U</title>
   </head>
   <body>
-    <div class="nav_hidden">
-      <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
-      <nav class="nav">
-        <!-- Nav_Overlay -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6">
-              <img
-                src="images/hidden_nav.svg"
-                alt="business man and woman photo"
-                type="image/svg+xml"
-                class="img-fluid businessman_photo"
-              />
-            </div>
-            <div class="col-lg-6 nav_bg">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link active" href="#">Home</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">About Us</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Our Service</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Contact Us</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link btn btn-primary" href="#">Hire Us</a>
-                </li>
-              </ul>
-              <span class="butterfly">
+    <!-- ----------------------------- navbar -----------------------------  -->
+    <div class="_navbar">
+      <div class="nav_hidden">
+        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+        <nav class="nav">
+          <!-- Nav_Overlay -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
                 <img
-                  src="images/butterfly.svg"
+                  src="images/hidden_nav.svg"
+                  alt="business man and woman photo"
                   type="image/svg+xml"
-                  class="img-fluid"
-                  alt="butterfly"
-              /></span>
+                  class="img-fluid businessman_photo"
+                />
+              </div>
+              <div class="col-lg-6 nav_bg">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link active" href="#">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">About Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Our Service</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link btn btn-primary button" href="#"
+                      >Hire Us</a
+                    >
+                  </li>
+                </ul>
+                <span class="butterfly">
+                  <img
+                    src="images/butterfly.svg"
+                    type="image/svg+xml"
+                    class="img-fluid"
+                    alt="butterfly"
+                /></span>
+              </div>
             </div>
           </div>
+        </nav>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" alt="logo" type="image/svg+xml" />
+          </a>
+          <div></div>
         </div>
       </nav>
     </div>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.svg" alt="logo" type="image/svg+xml" />
-        </a>
-        <div></div>
-      </div>
-    </nav>
 
+    <!-- ----------------------------- main -----------------------------  -->
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="main_text">
+              <h1>Lorem Apsom</h1>
+              <h3>
+                Dolor sit amet, consectetur adipiscing elit. Adipiscing viverra
+                nibh blandit lectus feugiat lectus.
+              </h3>
+              <a href="" class="btn btn-primary button">Hire Us</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/main_image.svg"
+              alt="main image"
+              type="image/svg+xml"
+              class="img-fluid main_img mx-auto d-block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- js  -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
