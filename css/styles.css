@@ -2,6 +2,7 @@
     /* colors */
     --blue01: #0F516A;
     --blue01_opacity: rgba(14, 81, 106, 0.7);
+    --blue04: #DBF4FF;
 
     --pink03: #FEE2F7;
 
@@ -19,6 +20,22 @@
     /* fonts */
     --text_font: 'Roboto', sans-serif;
     --header_font: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--header_font);
+}
+
+p {
+    font-family: var(--text_font);
 }
 
 /* ----------------------------- navbar ----------------------------- */
@@ -55,7 +72,7 @@
 .nav_bg {
     background-image: url(../images/nav_link_bg.svg);
     border-bottom-left-radius: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 /* nav_icon */
@@ -170,7 +187,7 @@
 }
 
 .button:hover {
-    background-color: var(--pink03);
+    background-color: transparent;
     color: var(--blue01);
     border-color: var(--blue01);
 }
@@ -192,7 +209,7 @@
 
 .main_img {
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 }
 
 .main_text {
@@ -200,7 +217,6 @@
 }
 
 .main_text h1 {
-    font-family: var(--header_font);
     font-weight: 600;
     color: var(--blue01);
     margin-bottom: 29px;
@@ -212,17 +228,65 @@
     color: var(--black02);
     font-size: 28px;
     line-height: 37px;
-    padding-bottom: 12px;
+    padding-bottom: 17px;
 }
 
 .main .button {
-
     font-size: 1.5rem;
     width: 150px;
     border-radius: 9px;
-
     padding-bottom: 9px;
+}
 
+/* ----------------------------- benefit ----------------------------- */
+.benefit {
+    position: relative;
+    bottom: 44px;
+    color: var(--black01);
+}
+
+.benefit .card {
+    background-color: var(--blue04);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.benefit .card1,
+.benefit .card3 {
+    padding-top: 10px;
+}
+
+.benefit .card1 .card,
+.benefit .card3 .card {
+    height: 200px;
+}
+
+.benefit .card_img img {
+    background-color: var(--blue01);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+
+}
+
+
+
+.benefit .card2 .card_img img {
+    padding: 8px;
+}
+
+.benefit .card1 .card_img img,
+.benefit .card3 .card_img img {
+    padding: 7px;
+}
+
+.benefit .card-header h3 {
+    margin-bottom: 0;
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+.benefit .card-body p {
+    color: var(--black02);
+    font-weight: 200;
 }
 
 /* ----------------------------- media query ----------------------------- */
@@ -295,6 +359,15 @@
         border-radius: 10px;
     }
 
+    .benefit .card1 .card,
+    .benefit .card3 .card {
+        height: 230px;
+    }
+
+    .benefit .card-header h3 {
+        font-size: 22px;
+    }
+
 }
 
 /* 767px */
@@ -325,8 +398,16 @@
     .main_text h3 {
         line-height: 32px;
         font-size: 22px;
-
         padding-bottom: 11px;
+    }
+
+    .benefit {
+        padding-top: 10px;
+    }
+
+    .benefit .card1 .card,
+    .benefit .card3 .card {
+        height: inherit;
     }
 
 }
@@ -396,6 +477,30 @@
     }
 
     .main_img {
-        padding: 20px 0;
+        padding: 19px 0;
     }
+
+    .benefit {
+        padding-top: 28px;
+    }
+}
+
+/* ----------------------------- hover effect ----------------------------- */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.03);
 }
