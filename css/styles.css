@@ -32,10 +32,12 @@ h3,
 h4,
 h5 {
     font-family: var(--header_font);
+    color: var(--black01);
 }
 
 p {
     font-family: var(--text_font);
+    color: var(--black02);
 }
 
 /* ----------------------------- navbar ----------------------------- */
@@ -225,7 +227,6 @@ p {
 .main_text h3 {
     font-family: var(--text_font);
     font-weight: 500;
-    color: var(--black02);
     font-size: 28px;
     line-height: 37px;
     padding-bottom: 17px;
@@ -285,8 +286,34 @@ p {
 }
 
 .benefit .card-body p {
-    color: var(--black02);
     font-weight: 200;
+}
+
+/* ----------------------------- about us ----------------------------- */
+.about_us {
+    padding-bottom: 50px;
+}
+
+.about_us_lable {
+    padding-top: 70px;
+}
+
+.about_us_lable img {
+    margin-bottom: 4px;
+}
+
+.about_us_lable .small_lable {
+    color: var(--blue01);
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.about_us_lable h1 {
+    margin-bottom: 23px;
+}
+
+.about_us_lable .about_us_para {
+    line-height: 30px;
 }
 
 /* ----------------------------- media query ----------------------------- */
@@ -307,6 +334,10 @@ p {
 
     .nav__link {
         font-size: 2.5rem;
+    }
+
+    .about_us_lable {
+        padding-top: 30px;
     }
 
 
@@ -368,6 +399,22 @@ p {
         font-size: 22px;
     }
 
+    .about_us_lable h1 {
+        font-size: 1.8rem;
+    }
+
+    .about_us_lable {
+        padding-top: 0;
+    }
+
+    .about_us_para {
+        line-height: 26px !important;
+    }
+
+    .about_us_lable .small_lable {
+
+        font-size: 16px;
+    }
 }
 
 /* 767px */
@@ -409,6 +456,21 @@ p {
     .benefit .card3 .card {
         height: inherit;
     }
+
+    .main {
+        padding-bottom: 20px;
+    }
+
+    .about_us {
+        padding-top: 20px;
+    }
+
+    .about_us_para {
+        line-height: 28px !important;
+        margin-bottom: 39px;
+    }
+
+
 
 }
 
@@ -477,11 +539,24 @@ p {
     }
 
     .main_img {
-        padding: 19px 0;
+        padding: 25px 0;
     }
 
     .benefit {
         padding-top: 28px;
+        bottom: 75px;
+    }
+
+    .benefit .card1 {
+        padding-top: 18px;
+    }
+
+    .benefit .card3 {
+        padding-top: 0;
+    }
+
+    .about_us {
+        padding-top: 0;
     }
 }
 
