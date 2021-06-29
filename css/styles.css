@@ -295,25 +295,57 @@ p {
 }
 
 .about_us_lable {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .about_us_lable img {
     margin-bottom: 4px;
 }
 
-.about_us_lable .small_lable {
+.about_us_lable .small_lable,
+.service_lable .small_lable {
     color: var(--blue01);
     font-size: 18px;
     margin-bottom: 0;
 }
 
-.about_us_lable h1 {
+.about_us_lable h1,
+.service_lable h1 {
     margin-bottom: 23px;
 }
 
-.about_us_lable .about_us_para {
+.about_us_lable .about_us_para,
+.service_lable .service_para {
     line-height: 30px;
+}
+
+.about_us_lable .button {
+    font-size: 1.3rem;
+    width: 130px;
+    padding-bottom: 7px;
+}
+
+/* ----------------------------- service ----------------------------- */
+.service {
+    background-color: var(--greentea04);
+    background-image: url(../images/service_bg.svg);
+    padding: 50px 0;
+    background-repeat: no-repeat;
+}
+
+.service_img img {
+    width: 85%;
+    margin-top: 20px;
+}
+
+.service_lable .button {
+    font-size: 1.3rem;
+    width: 145px;
+    padding-bottom: 7px;
+}
+
+.service .hidden {
+    display: none;
 }
 
 /* ----------------------------- media query ----------------------------- */
@@ -340,6 +372,14 @@ p {
         padding-top: 30px;
     }
 
+    .service {
+        background-position: right;
+    }
+
+    .service_img img {
+
+        margin-top: 80px;
+    }
 
 }
 
@@ -399,7 +439,8 @@ p {
         font-size: 22px;
     }
 
-    .about_us_lable h1 {
+    .about_us_lable h1,
+    .service_lable h1 {
         font-size: 1.8rem;
     }
 
@@ -407,13 +448,39 @@ p {
         padding-top: 0;
     }
 
-    .about_us_para {
+    .about_us_para,
+    .service_para {
         line-height: 26px !important;
     }
 
-    .about_us_lable .small_lable {
+    .about_us_lable .small_lable,
+    .service_lable .small_lable {
 
         font-size: 16px;
+    }
+
+    .about_us_img img {
+        margin-top: 42px;
+    }
+
+    .service .show {
+        display: none;
+    }
+
+    .service .hidden {
+        display: contents;
+    }
+
+    .service_img img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+        width: 60%;
+    }
+
+    .service_lable .button {
+        margin-top: 10px;
     }
 }
 
@@ -465,11 +532,16 @@ p {
         padding-top: 20px;
     }
 
-    .about_us_para {
+    .about_us_para,
+    .service_para {
         line-height: 28px !important;
-        margin-bottom: 39px;
+        margin-bottom: 20px;
     }
 
+    .service_img img {
+
+        width: 70%;
+    }
 
 
 }
@@ -557,6 +629,29 @@ p {
 
     .about_us {
         padding-top: 0;
+    }
+
+    .about_us_lable .button {
+        font-size: 1.1rem;
+        width: 110px;
+    }
+
+    .service {
+        padding-top: 40px;
+    }
+
+    .service_lable .button {
+        font-size: 1.1rem;
+        width: 125px;
+    }
+
+    .service_img img {
+
+        width: 80%;
+    }
+
+    .service_lable .button {
+        margin-top: 0;
     }
 }
 
