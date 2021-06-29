@@ -348,6 +348,44 @@ p {
     display: none;
 }
 
+/* ----------------------------- testimonial ----------------------------- */
+.testimonial {
+    padding: 40px 0;
+}
+
+.testimonial_header .small_lable {
+    margin-bottom: 0;
+}
+
+.testimonial .quote img {
+    width: 60px;
+}
+
+.testimonial .quote {
+    position: absolute;
+    top: 23px;
+    left: 159px;
+}
+
+.review {
+    background-image: linear-gradient(to bottom right, var(--blue04), var(--greentea04));
+    padding: 40px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 50px;
+}
+
+.review h5 {
+    color: var(--black02);
+}
+
+.testimonial .button {
+    font-size: 1.3rem;
+    width: 175px;
+    padding-bottom: 7px;
+    margin-top: 30px;
+}
+
 /* ----------------------------- media query ----------------------------- */
 
 /* 1199px */
@@ -379,6 +417,11 @@ p {
     .service_img img {
 
         margin-top: 80px;
+    }
+
+    .testimonial .quote {
+
+        left: 129px;
     }
 
 }
@@ -440,7 +483,8 @@ p {
     }
 
     .about_us_lable h1,
-    .service_lable h1 {
+    .service_lable h1,
+    .testimonial h1 {
         font-size: 1.8rem;
     }
 
@@ -454,7 +498,8 @@ p {
     }
 
     .about_us_lable .small_lable,
-    .service_lable .small_lable {
+    .service_lable .small_lable,
+    .testimonial_header .small_lable {
 
         font-size: 16px;
     }
@@ -481,6 +526,10 @@ p {
 
     .service_lable .button {
         margin-top: 10px;
+    }
+
+    .testimonial .quote {
+        left: 32px;
     }
 }
 
