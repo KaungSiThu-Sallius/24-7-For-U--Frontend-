@@ -7,17 +7,22 @@ AOS.init({
     duration: 500,
 })
 
-var btn = $('#go_top_button');
 
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
+
+btn = $('#go_top_button');;
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         btn.addClass('show');
     } else {
         btn.removeClass('show');
     }
-});
+}
 
-btn.on('click', function (e) {
-    e.preventDefault();
+function topFunction() {
+
     $('html, body').animate({ scrollTop: 0 }, '300');
-});
+    document.documentElement.scrollTop = 0;
+}

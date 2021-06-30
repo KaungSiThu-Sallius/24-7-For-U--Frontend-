@@ -859,6 +859,7 @@ p {
 
 /* ----------------------------- scroll_to_top ----------------------------- */
 #go_top_button {
+    border: none;
     display: inline-block;
     background-color: var(--blue01);
     width: 50px;
@@ -886,6 +887,7 @@ p {
 }
 
 #go_top_button:hover {
+    border: none;
     cursor: pointer;
     background-color: #7ECAEA;
 }
@@ -893,6 +895,8 @@ p {
 #go_top_button:active {
     background-color: #7ECAEA;
 }
+
+
 
 #go_top_button.show {
     opacity: 1;
