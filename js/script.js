@@ -1,3 +1,4 @@
+// navbar
 $('.nav__trigger').on('click', function (e) {
     e.preventDefault();
     $(this).parent().toggleClass('nav--active');
@@ -8,7 +9,7 @@ AOS.init({
 })
 
 
-
+// scroll_to_top_btn
 btn = $('#go_top_button');;
 
 window.onscroll = function () { scrollFunction() };
@@ -25,4 +26,9 @@ function topFunction() {
 
     $('html, body').animate({ scrollTop: 0 }, '300');
     document.documentElement.scrollTop = 0;
+}
+
+// preloader
+window.onload = function () {
+    document.querySelector("#hola").style.display = "none";
 }
