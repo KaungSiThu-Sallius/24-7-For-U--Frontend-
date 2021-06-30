@@ -824,6 +824,17 @@ p {
     .copyright p {
         text-align: center;
     }
+
+    #go_top_button {
+
+        width: 41px !important;
+        height: 41px !important;
+    }
+
+    #go_top_button::after {
+
+        line-height: 41px !important;
+    }
 }
 
 /* ----------------------------- hover effect ----------------------------- */
@@ -844,4 +855,46 @@ p {
 .hvr-grow:active {
     -webkit-transform: scale(1.01);
     transform: scale(1.03);
+}
+
+/* ----------------------------- scroll_to_top ----------------------------- */
+#go_top_button {
+    display: inline-block;
+    background-color: var(--blue01);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#go_top_button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#go_top_button:hover {
+    cursor: pointer;
+    background-color: #7ECAEA;
+}
+
+#go_top_button:active {
+    background-color: #7ECAEA;
+}
+
+#go_top_button.show {
+    opacity: 1;
+    visibility: visible;
 }
