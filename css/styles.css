@@ -186,6 +186,7 @@ p {
     border-radius: 10px;
     font-weight: normal;
     padding-bottom: 10px;
+    border: none;
 }
 
 .button:hover {
