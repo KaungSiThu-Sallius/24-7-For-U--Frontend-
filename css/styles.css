@@ -236,7 +236,7 @@ p {
     font-size: 1.5rem;
     width: 150px;
     border-radius: 9px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
 }
 
 /* ----------------------------- benefit ----------------------------- */
@@ -384,6 +384,11 @@ p {
     width: 175px;
     padding-bottom: 7px;
     margin-top: 30px;
+}
+
+/* ----------------------------- media query ----------------------------- */
+.footer {
+    background-color: var(--greentea04);
 }
 
 /* ----------------------------- media query ----------------------------- */
