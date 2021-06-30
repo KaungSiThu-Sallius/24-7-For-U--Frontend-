@@ -186,7 +186,7 @@ p {
     border-radius: 10px;
     font-weight: normal;
     padding-bottom: 10px;
-    border: none;
+    border-color: var(--blue01);
 }
 
 .button:hover {
@@ -387,10 +387,70 @@ p {
     margin-top: 30px;
 }
 
-/* ----------------------------- media query ----------------------------- */
+/* ----------------------------- footer ----------------------------- */
 .footer {
     background-color: var(--greentea04);
+    padding: 40px 0;
 }
+
+.footer .button {
+    font-size: 1.3rem;
+    width: 115px;
+    padding-bottom: 8px;
+}
+
+.footer .second_section,
+.footer .third_section,
+.footer .first_section {
+    padding-bottom: 20px;
+}
+
+.footer .second_section a {
+    text-decoration: none;
+    color: var(--black02);
+}
+
+.footer .second_section a:hover {
+    color: var(--black01);
+}
+
+.footer .links {
+    margin-top: 15px;
+}
+
+.footer .links a {
+    color: var(--blue01);
+}
+
+.footer .links a i {
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+
+
+.footer .links a:hover {
+    color: var(--black02);
+}
+
+.footer .third_section p {
+    display: inline-block;
+    margin-bottom: 8px;
+
+}
+
+.footer .third_section p a {
+    text-decoration: none;
+    color: var(--black02);
+}
+
+.footer .third_section i {
+    padding-right: 5px;
+}
+
+
+
+
 
 /* ----------------------------- media query ----------------------------- */
 
@@ -598,7 +658,37 @@ p {
         width: 70%;
     }
 
+    .footer {
+        text-align: center;
+    }
 
+    .footer .first_section::after,
+    .footer .third_section::after {
+        content: "";
+        width: 61px;
+        height: 2px;
+        background-color: var(--blue01);
+        position: absolute;
+    }
+
+    .footer .first_section::after {
+        top: 194px;
+        left: 239px;
+    }
+
+    .footer .third_section::after {
+        left: 239px;
+        top: 22px;
+    }
+
+    .footer .second_section,
+    .footer .third_section {
+        margin-top: 40px;
+    }
+
+    .footer .third_section .address {
+        display: block;
+    }
 }
 
 /* 600px */
@@ -707,6 +797,18 @@ p {
 
     .service_lable .button {
         margin-top: 0;
+    }
+
+
+    .footer .first_section::after,
+    .footer .third_section::after {
+        display: none;
+    }
+
+    .first_section,
+    .second_section,
+    .third_section {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 }
 
