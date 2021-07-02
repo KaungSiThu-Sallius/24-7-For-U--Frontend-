@@ -189,6 +189,11 @@ p {
     border-color: var(--blue01);
 }
 
+.button:active {
+    background-color: var(--blue01_opacity);
+}
+
+
 .button:hover {
     background-color: transparent;
     color: var(--blue01);
@@ -974,4 +979,30 @@ p {
         transform: rotate(360deg);
         opacity: 0.5;
     }
+}
+
+/* ----------------------------- hire_us ----------------------------- */
+#hire_us {
+    padding: 60px 0;
+    background-image: url(../images/hire_us_bg.svg);
+    background-repeat: no-repeat;
+
+}
+
+#hire_us .card-header {
+    background-color: var(--blue04);
+
+}
+
+#hire_us .card-header h4 {
+    margin: 0;
+}
+
+#hire_us .iti--allow-dropdown {
+    width: 100%;
+}
+
+#hire_us .form .btn {
+    background-color: var(--blue01);
+    color: var(--white);
 }

@@ -1,3 +1,4 @@
+
 // navbar
 $('.nav__trigger').on('click', function (e) {
     e.preventDefault();
@@ -32,3 +33,15 @@ function topFunction() {
 window.onload = function () {
     document.querySelector("#hola").style.display = "none";
 }
+
+
+// international_ph
+const phoneInputField = document.querySelector("#phone");
+const phoneInput = window.intlTelInput(phoneInputField, {
+    preferredCountries: ["mm"],
+    utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+
+
+

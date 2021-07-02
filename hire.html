@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- datepicker -->
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/bae217b688.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.css"
+      integrity="sha512-ksbpl5EUb4HLEKUNItsPMT/Ih6KcISE53GbYOu3xFUVYvTSSX5AJxTI2aigdQm9uNSkSsRMHsSGNKppkt691lw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google_fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- international_ph -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/titlebar_icon.svg" type="image/svg+xml" />
+    <title>24/7 For U</title>
+  </head>
+  <body>
+    <!-- scroll_to_top -->
+    <span onclick="topFunction()" id="go_top_button"></span>
+    <!-- preloader -->
+    <div id="hola">
+      <div id="preloader">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- ----------------------------- navbar -----------------------------  -->
+    <div class="_navbar">
+      <div class="nav_hidden">
+        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+        <nav class="nav">
+          <!-- Nav_Overlay -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <img
+                  src="images/hidden_nav.svg"
+                  alt="business man and woman photo"
+                  type="image/svg+xml"
+                  class="img-fluid businessman_photo"
+                />
+              </div>
+              <div class="col-lg-6 nav_bg">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">About Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Our Service</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link btn button hvr-grow" href="#"
+                      >Hire Us</a
+                    >
+                  </li>
+                </ul>
+                <span class="butterfly">
+                  <img
+                    src="images/butterfly.svg"
+                    type="image/svg+xml"
+                    class="img-fluid"
+                    alt="butterfly"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="logo" type="image/svg+xml" />
+          </a>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+    <!-- ----------------------------- hire_us -----------------------------  -->
+    <div id="hire_us">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-8">
+            <div class="form card">
+              <div class="card-header"><h4>Hire Virtual Assistance</h4></div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control mb-4"
+                      id="name"
+                      name="name"
+                      placeholder="Please enter your name"
+                    />
+                    <!-- <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    > -->
+                  </div>
+                  <div class="form-group">
+                    <label for="org_name">Company/Organization Name</label>
+                    <input
+                      type="text"
+                      class="form-control mb-4"
+                      id="org_name"
+                      name="org_name"
+                      placeholder="Please enter company name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone" class="d-block">Phone Number</label>
+                    <input
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      name="phone"
+                      class="form-control mb-4"
+                      placeholder="Please enter phone number"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Please enter email"
+                    />
+                    <small id="emailHelp" class="form-text text-muted mb-4"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="tasks">What would you like us to do?</label>
+                    <div class="form-control">
+                        
+                        <div>
+                        <input
+                          type="checkbox"
+                          name="tasks"
+                          value="moderator_factlator"
+                        />
+                        <label for="moderator_factlator"
+                          >Moderator / Factlator</label
+                        >
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="tasks"
+                          value="presentation"
+                        />
+                        <label for="presentation">Presentation</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="tasks"
+                          value="manage_email"
+                        />
+                        <label for="manage_email">Managing Email</label>
+                      </div>
+                      <div>
+                          <input
+                            type="checkbox"
+                            name="tasks"
+                            value="research"
+                          />
+                          <label for="research">Research</label>
+                        </div></div>
+                    
+                  </div>
+                 <div class="form-group">
+                     <label for="date_time">Date & Time</label>
+            
+                     <input type="datetime-local" id="date_time" name="date_time" class="form-control mb-4">
+                 </div>
+                 <div class="form-group">
+                     <label for="count_ppl">How many people whould you like to hire?</label>
+                     <select class="custom-select" name="count_ppl">
+                        <option selected>Open this select menu</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                 </div>
+                </div>
+                
+                  <button type="submit" class="btn btn-lg">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.js"
+      integrity="sha512-678bHRnILWQudsPcjDbSoYtwimEk8yPq7BBWeJaFoSHPf7Ob7N7au8M49yY9Wbpmmi0PvDzf3Rca1mbmYQLAxQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
