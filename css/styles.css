@@ -814,6 +814,30 @@ p {
     margin-bottom: 0;
 }
 
+/* ----------------------------- contact_form ----------------------------- */
+.contact_form {
+    padding: 40px 0;
+}
+
+.contact_form .small_lable {
+    margin-bottom: 0;
+
+}
+
+.contact_us_lable {
+    padding-top: 122px;
+}
+
+.contact_us_lable h2 {
+    margin-bottom: 20px;
+}
+
+.contact_form .button {
+    font-size: 1.3rem;
+    width: 170px;
+    padding-bottom: 7px;
+}
+
 /* ----------------------------- media query ----------------------------- */
 
 /* 1199px */
@@ -968,7 +992,8 @@ p {
         left: 32px;
     }
 
-    .fees_header h2 {
+    .fees_header h2,
+    .contact_us_lable h2 {
         font-size: 1.8rem;
     }
 }
@@ -1066,6 +1091,10 @@ p {
 
     .about_about_us {
         padding-top: 40px;
+    }
+
+    .contact_us_lable {
+        padding-top: 0;
     }
 }
 
