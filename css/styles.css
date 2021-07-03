@@ -309,7 +309,8 @@ p {
 }
 
 .about_us_lable .small_lable,
-.service_lable .small_lable {
+.service_lable .small_labl,
+.faq_label .small_lable {
     color: var(--blue01);
     font-size: 18px;
     margin-bottom: 0;
@@ -395,7 +396,7 @@ p {
 /* ----------------------------- footer ----------------------------- */
 .footer {
     background-color: var(--greentea04);
-    padding: 40px 0;
+    padding: 40px 0 10px 0;
 }
 
 .footer .button {
@@ -467,380 +468,7 @@ p {
 
 
 
-/* ----------------------------- media query ----------------------------- */
 
-/* 1199px */
-@media (max-width: 1199px) {
-    .main_text {
-        margin-top: 140px;
-    }
-
-    .nav__list {
-        margin-top: 19%;
-    }
-
-    .nav__list li {
-        margin-bottom: 30px;
-    }
-
-    .nav__link {
-        font-size: 2.5rem;
-    }
-
-    .about_us_lable {
-        padding-top: 30px;
-    }
-
-    .service {
-        background-position: right;
-    }
-
-    .service_img img {
-
-        margin-top: 80px;
-    }
-
-    .testimonial .quote {
-
-        left: 129px;
-    }
-
-}
-
-/* 991px */
-@media (max-width: 991px) {
-
-    .nav__list {
-        margin-top: 10%;
-        margin-bottom: 75px;
-    }
-
-    .nav_bg {
-        border-bottom-right-radius: 50px;
-        background-color: var(--greentea04);
-        background-image: url(../images/nav_link_bg_opacity.svg);
-        background-repeat: no-repeat;
-        background-size: 750px 550px;
-        background-position: center;
-    }
-
-    .businessman_photo {
-        position: absolute;
-        display: none;
-    }
-
-    .butterfly {
-        display: none;
-    }
-
-    .main_text {
-        margin-top: 110px;
-    }
-
-    .main_text h1 {
-        font-size: 32px;
-        margin-bottom: 15px;
-    }
-
-    .main_text h3 {
-        font-size: 20px;
-        line-height: 28px;
-        padding-bottom: 8px;
-    }
-
-    .main .button {
-        font-size: 1.3rem;
-        width: 120px;
-        border-radius: 10px;
-    }
-
-    .benefit .card1 .card,
-    .benefit .card3 .card {
-        height: 230px;
-    }
-
-    .benefit .card-header h3 {
-        font-size: 22px;
-    }
-
-    .about_us_lable h1,
-    .service_lable h1,
-    .testimonial h1 {
-        font-size: 1.8rem;
-    }
-
-    .about_us_lable {
-        padding-top: 0;
-    }
-
-    .about_us_para,
-    .service_para {
-        line-height: 26px !important;
-    }
-
-    .about_us_lable .small_lable,
-    .service_lable .small_lable,
-    .testimonial_header .small_lable {
-
-        font-size: 16px;
-    }
-
-    .about_us_img img {
-        margin-top: 42px;
-    }
-
-    .service .show {
-        display: none;
-    }
-
-    .service .hidden {
-        display: contents;
-    }
-
-    .service_img img {
-        display: block;
-        margin: 0 auto;
-        margin-top: 40px;
-        text-align: center;
-        width: 60%;
-    }
-
-    .service_lable .button {
-        margin-top: 10px;
-    }
-
-    .testimonial .quote {
-        left: 32px;
-    }
-}
-
-/* 767px */
-@media (max-width: 767px) {
-    .nav_bg {
-        background-size: 650px 500px;
-    }
-
-    .main_img {
-        height: 400px;
-        padding-bottom: 30px;
-    }
-
-    .main {
-        background-position: left;
-    }
-
-    .main_text {
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    .main_text h1 {
-        font-size: 34px;
-        margin-bottom: 18px;
-    }
-
-    .main_text h3 {
-        line-height: 32px;
-        font-size: 22px;
-        padding-bottom: 11px;
-    }
-
-    .benefit {
-        padding-top: 10px;
-    }
-
-    .benefit .card1 .card,
-    .benefit .card3 .card {
-        height: inherit;
-    }
-
-    .main {
-        padding-bottom: 20px;
-    }
-
-    .about_us {
-        padding-top: 20px;
-    }
-
-    .about_us_para,
-    .service_para {
-        line-height: 28px !important;
-        margin-bottom: 20px;
-    }
-
-    .service_img img {
-
-        width: 70%;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer .first_section::after,
-    .footer .third_section::after {
-        content: "";
-        width: 61px;
-        height: 2px;
-        background-color: var(--blue01);
-        position: absolute;
-    }
-
-    .footer .first_section::after {
-        top: 194px;
-        left: 239px;
-    }
-
-    .footer .third_section::after {
-        left: 239px;
-        top: 22px;
-    }
-
-    .footer .second_section,
-    .footer .third_section {
-        margin-top: 40px;
-    }
-
-    .footer .third_section .address {
-        display: block;
-    }
-}
-
-/* 600px */
-@media (max-width: 600px) {
-
-    .nav__trigger {
-        right: 5%;
-    }
-}
-
-/* 575px */
-@media (max-width: 575px) {
-    .nav__trigger {
-        padding-left: 14px;
-        padding-right: 14px;
-        padding-top: 1px;
-        padding-bottom: 10.5px;
-        top: 27px;
-        border-radius: 10px;
-    }
-
-    .nav__icon {
-        width: 25px;
-        height: 2.5px;
-    }
-
-    .nav__icon:before,
-    .nav__icon:after {
-        width: 25px;
-        height: 2.5px;
-    }
-
-    .nav__icon:before {
-        margin-top: -7px;
-    }
-
-    .nav__icon:after {
-        margin-top: 7px;
-    }
-
-    .nav__link {
-        font-size: 2rem;
-    }
-
-    .nav_bg {
-        background-size: 500px 400px;
-    }
-
-    .nav__item .button {
-        font-size: 1.5rem;
-        width: 140px;
-    }
-
-    .main_text {
-        margin-top: 40px;
-    }
-
-    .main_text h1 {
-        font-size: 31px;
-    }
-
-    .main_text h3 {
-        line-height: 30px;
-        font-size: 20px;
-    }
-
-    .main_img {
-        padding: 25px 0;
-    }
-
-    .benefit {
-        padding-top: 28px;
-        bottom: 75px;
-    }
-
-    .benefit .card1 {
-        padding-top: 18px;
-    }
-
-    .benefit .card3 {
-        padding-top: 0;
-    }
-
-    .about_us {
-        padding-top: 0;
-    }
-
-    .about_us_lable .button {
-        font-size: 1.1rem;
-        width: 110px;
-    }
-
-    .service {
-        padding-top: 40px;
-    }
-
-    .service_lable .button {
-        font-size: 1.1rem;
-        width: 125px;
-    }
-
-    .service_img img {
-
-        width: 80%;
-    }
-
-    .service_lable .button {
-        margin-top: 0;
-    }
-
-
-    .footer .first_section::after,
-    .footer .third_section::after {
-        display: none;
-    }
-
-    .first_section,
-    .second_section,
-    .third_section {
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
-
-    .copyright p {
-        text-align: center;
-    }
-
-    #go_top_button {
-
-        width: 41px !important;
-        height: 41px !important;
-    }
-
-    #go_top_button::after {
-
-        line-height: 41px !important;
-    }
-}
 
 /* ----------------------------- hover effect ----------------------------- */
 .hvr-grow {
@@ -1005,4 +633,518 @@ p {
 #hire_us .form .btn {
     background-color: var(--blue01);
     color: var(--white);
+}
+
+/* ----------------------------- about_us ----------------------------- */
+/* ----------------------------- preview ----------------------------- */
+.preview {
+    background-image: url(../images/about_us_bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 40px 0;
+
+}
+
+.preview h2,
+.preview p {
+    text-align: center;
+    color: var(--white);
+
+}
+
+.preview p {
+    margin: 0 auto;
+    font-size: 18px;
+    width: 80%;
+
+}
+
+/* ----------------------------- about ----------------------------- */
+.about_about_us {
+    padding: 60px 0;
+}
+
+.about_benefit {
+    position: static;
+    padding-bottom: 50px;
+}
+
+
+
+
+/* ----------------------------- faq ----------------------------- */
+.faq {
+    background-color: #fff !important;
+    padding: 50px 0;
+}
+
+.faq_label .small_lable {
+    margin-bottom: 0;
+}
+
+.faq-content {
+    margin: 0 auto;
+}
+
+.faq-question {
+    padding: 20px 0;
+    border-bottom: 1px dotted rgb(133, 130, 130);
+}
+
+.panel-title {
+    font-size: 18px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+}
+
+.panel-content {
+    font-size: 16px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+
+.panel:checked~.panel-content {
+    height: auto;
+    opacity: 1;
+    padding: 14px 0 5px 0;
+}
+
+.plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 3px;
+    z-index: 5;
+    font-size: 35px;
+    line-height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.panel:checked~.plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.panel {
+    display: none;
+}
+
+.faq .rec {
+    margin-bottom: 4px;
+}
+
+/* ----------------------------- media query ----------------------------- */
+
+/* 1199px */
+@media (max-width: 1199px) {
+    .main_text {
+        margin-top: 140px;
+    }
+
+    .nav__list {
+        margin-top: 19%;
+    }
+
+    .nav__list li {
+        margin-bottom: 30px;
+    }
+
+    .nav__link {
+        font-size: 2.5rem;
+    }
+
+    .about_us_lable {
+        padding-top: 30px;
+    }
+
+    .service {
+        background-position: right;
+    }
+
+    .service_img img {
+
+        margin-top: 80px;
+    }
+
+    .testimonial .quote {
+
+        left: 129px;
+    }
+
+
+    .faq_img {
+        margin-top: 20px;
+    }
+
+}
+
+/* 991px */
+@media (max-width: 991px) {
+
+    .nav__list {
+        margin-top: 10%;
+        margin-bottom: 75px;
+    }
+
+    .nav_bg {
+        border-bottom-right-radius: 50px;
+        background-color: var(--greentea04);
+        background-image: url(../images/nav_link_bg_opacity.svg);
+        background-repeat: no-repeat;
+        background-size: 750px 550px;
+        background-position: center;
+    }
+
+    .businessman_photo {
+        position: absolute;
+        display: none;
+    }
+
+    .butterfly {
+        display: none;
+    }
+
+    .main_text {
+        margin-top: 110px;
+    }
+
+    .main_text h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .main_text h3 {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 8px;
+    }
+
+    .main .button {
+        font-size: 1.3rem;
+        width: 120px;
+        border-radius: 10px;
+    }
+
+    .benefit .card1 .card,
+    .benefit .card3 .card {
+        height: 230px;
+    }
+
+    .benefit .card-header h3 {
+        font-size: 22px;
+    }
+
+    .about_us_lable h1,
+    .service_lable h1,
+    .testimonial h1,
+    .faq_label h2 {
+        font-size: 1.8rem;
+    }
+
+    .about_us_lable {
+        padding-top: 0;
+    }
+
+    .about_us_para,
+    .service_para {
+        line-height: 26px !important;
+    }
+
+    .about_us_lable .small_lable,
+    .service_lable .small_lable,
+    .testimonial_header,
+    .faq_label .small_lable {
+
+        font-size: 16px;
+    }
+
+    .about_us_img img {
+        margin-top: 42px;
+    }
+
+    .service .show {
+        display: none;
+    }
+
+    .service .hidden {
+        display: contents;
+    }
+
+    .service_img img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+        width: 60%;
+    }
+
+    .service_lable .button {
+        margin-top: 10px;
+    }
+
+    .testimonial .quote {
+        left: 32px;
+    }
+}
+
+/* 767px */
+@media (max-width: 767px) {
+    .nav_bg {
+        background-size: 650px 500px;
+    }
+
+    .main_img {
+        height: 400px;
+        padding-bottom: 30px;
+    }
+
+    .main {
+        background-position: left;
+    }
+
+    .main_text {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .main_text h1 {
+        font-size: 34px;
+        margin-bottom: 18px;
+    }
+
+    .main_text h3 {
+        line-height: 32px;
+        font-size: 22px;
+        padding-bottom: 11px;
+    }
+
+    .benefit {
+        padding-top: 10px;
+    }
+
+    .benefit .card1 .card,
+    .benefit .card3 .card {
+        height: inherit;
+    }
+
+    .main {
+        padding-bottom: 20px;
+    }
+
+    .about_us {
+        padding-top: 20px;
+    }
+
+    .about_us_para,
+    .service_para {
+        line-height: 28px !important;
+        margin-bottom: 20px;
+    }
+
+    .service_img img {
+
+        width: 70%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .first_section::after,
+    .footer .third_section::after {
+        content: "";
+        width: 61px;
+        height: 2px;
+        background-color: var(--blue01);
+        position: absolute;
+    }
+
+    .footer .first_section::after {
+        top: 194px;
+        left: 239px;
+    }
+
+    .footer .third_section::after {
+        left: 239px;
+        top: 22px;
+    }
+
+    .footer .second_section,
+    .footer .third_section {
+        margin-top: 40px;
+    }
+
+    .footer .third_section .address {
+        display: block;
+    }
+
+    .about_about_us {
+        padding-top: 40px;
+    }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+
+    .nav__trigger {
+        right: 5%;
+    }
+}
+
+/* 575px */
+@media (max-width: 575px) {
+    .nav__trigger {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 1px;
+        padding-bottom: 10.5px;
+        top: 27px;
+        border-radius: 10px;
+    }
+
+    .nav__icon {
+        width: 25px;
+        height: 2.5px;
+    }
+
+    .nav__icon:before,
+    .nav__icon:after {
+        width: 25px;
+        height: 2.5px;
+    }
+
+    .nav__icon:before {
+        margin-top: -7px;
+    }
+
+    .nav__icon:after {
+        margin-top: 7px;
+    }
+
+    .nav__link {
+        font-size: 2rem;
+    }
+
+    .nav_bg {
+        background-size: 500px 400px;
+    }
+
+    .nav__item .button {
+        font-size: 1.5rem;
+        width: 140px;
+    }
+
+    .main_text {
+        margin-top: 40px;
+    }
+
+    .main_text h1 {
+        font-size: 31px;
+    }
+
+    .main_text h3 {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .main_img {
+        padding: 25px 0;
+    }
+
+    .benefit {
+        padding-top: 28px;
+        bottom: 75px;
+    }
+
+    .benefit .card1 {
+        padding-top: 18px;
+    }
+
+    .benefit .card3 {
+        padding-top: 0;
+    }
+
+    .about_us {
+        padding-top: 0;
+    }
+
+    .about_us_lable .button {
+        font-size: 1.1rem;
+        width: 110px;
+    }
+
+    .service {
+        padding-top: 40px;
+    }
+
+    .service_lable .button {
+        font-size: 1.1rem;
+        width: 125px;
+    }
+
+    .service_img img {
+
+        width: 80%;
+    }
+
+    .service_lable .button {
+        margin-top: 0;
+    }
+
+
+    .footer .first_section::after,
+    .footer .third_section::after {
+        display: none;
+    }
+
+    .first_section,
+    .second_section,
+    .third_section {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .copyright p {
+        text-align: center;
+    }
+
+    #go_top_button {
+
+        width: 41px !important;
+        height: 41px !important;
+    }
+
+    #go_top_button::after {
+
+        line-height: 41px !important;
+    }
+
+    .preview p {
+        font-size: 16px;
+    }
+
+    .about_about_us {
+        padding: 40px 0 0 0;
+    }
 }
